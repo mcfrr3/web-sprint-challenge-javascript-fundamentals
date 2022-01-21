@@ -16,7 +16,8 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// The nested function creates a closure and is able to access the variable in myFunction 
+// because of the block scope that it's in
 
 
 
@@ -28,10 +29,17 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(number) {
+  let sum = 0;
 
+  for(let i = 1; i <= number; i++) {
+    sum += i;
   }
+
+  return sum;
+}
+
+// console.log(summation(5));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
